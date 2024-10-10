@@ -64,7 +64,8 @@ form.addEventListener("submit", function(event) {
     const newComment = document.createElement("li");
     newComment.className = "list-group-item";
     newComment.innerHTML = `
-        <p><strong>${storedName}:</strong> ${commentText}</p>
+        <p class="pernama"> <strong>${storedName}:</strong> </p>
+        <p class="komen"> ${commentText}</p>
         <div class="comment-actions">
         <button class="btn btn-sm btn-warning edit">Edit</button>
         <button class="btn btn-sm btn-danger delete">Delete</button>
@@ -90,10 +91,10 @@ function addCommentActions(commentElement) {
     
     // Fungsi Edit
     editButton.addEventListener("click", function() {
-        const commentText = commentElement.querySelector("p").innerText;
+        const commentText = commentElement.querySelector(".komen").innerText;
         const newCommentText = prompt("Edit your comment:", commentText);
         if (newCommentText !== null && newCommentText.trim() !== "") {
-            commentElement.querySelector("p").innerHTML = `<strong>${storedName}:</strong> ${newCommentText}`;
+            commentElement.querySelector(".komen").innerHTML = `${newCommentText}`;
         }
     });
 
