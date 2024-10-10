@@ -24,6 +24,10 @@
         </div>
     </main>
     <script>
+        const storedName = localStorage.getItem('nama');
+        if(!storedName){
+            window.location.href = 'login.html'
+        }
         const film = [
             { image: 'https://i.ytimg.com/vi/Qr4hzcJxNl0/maxresdefault.jpg', 
                 title: 'Warkop DKI Kesempatan Dalam Kesempitan', 
