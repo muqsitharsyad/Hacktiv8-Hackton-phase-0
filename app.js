@@ -1,15 +1,13 @@
 // Daftar video 
 const videos = [
-  { id: '1', title: 'movie website' },
-  { id: '2', title: 'movie website' },
-  { id: '3', title: 'movie website' },
-  { id: '4', title: 'movie website' },
-  { id: '5', title: 'movie website' },
-  { id: '6', title: 'movie website' },
-  { id: '7', title: 'movie website' },
-  { id: '8', title: 'movie website' },
-  { id: '9', title: 'movie website' },
-  { id: '10', title: 'movie website' }
+  { id: '1', title: 'Warkop DKI Kesempatan Dalam Kesempitan'},
+  { id: '2', title: 'Menjelang Ajal'},
+  { id: '3', title: 'Pamali'},
+  { id: '4', title: 'Crad title'},
+  { id: '5', title: 'Kapan di Dalam Kapan di Luar'},
+  { id: '6', title: 'Serendipity'},
+  { id: '7', title: 'Maju Kena Mundur Kena'},
+  { id: '8', title: 'Bunga Cinta Kasih' }
 ];
 
 // Fungsi pencarian
