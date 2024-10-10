@@ -32,22 +32,6 @@ function searchVideos() {
   }
 }
 
-  // Tampilkan hasil pencarian
-  const resultsDiv = document.getElementById('resultsDiv');
-  resultsDiv.innerHTML = '';
-  
-  if (filteredVideos.length > 0) {
-      for (let i = 0; i < filteredVideos.length; i++) {
-          const videoElement = document.createElement('div');
-          videoElement.innerHTML = `
-              <p>${filteredVideos[i].title}</p>
-              <button onclick="playVideo('${filteredVideos[i].id}')">Play</button>
-          `;
-          resultsDiv.appendChild(videoElement);
-      }
-  } else {
-      resultsDiv.innerHTML = '<p>No videos found</p>';
-}
 
 
 // Fungsi untuk memainkan video dan arahkan ke halaman playing.html
